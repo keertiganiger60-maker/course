@@ -28,10 +28,10 @@ def test_main_output(capsys):
 
     # Check that expected details are printed
     assert "--- Student Report ---" in captured.out
-    assert "Name       : "Shivaganga B Ganiger" in captured.out
-    assert "Department : "BCA" in captured.out
-    assert "Semester   : 3 in captured.out
-    assert "Marks      : [75, 82, 68] in captured.out
+    assert "Name       : Shivaganga B Ganiger" in captured.out
+    assert "Department : BCA" in captured.out
+    assert "Semester   : 3" in captured.out
+    assert "Marks      : [75, 82, 68]"in captured.out
     # Average should be (75+82+68)/3 = 75.0
-    assert "Average    : 75.00 in captured.out
-    assert "Grade      : B in captured.out
+    assert "Average    : 75.00" in captured.out
+    assert "Grade      : B"in captured.out
